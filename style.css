@@ -43,11 +43,11 @@ header {
 
 nav {
     margin: 0 5%;
+    font-size: 1.5rem;
     display: flex;
     align-items: center;
-    flex-wrap: nowrap;
-    gap: calc(40vmin + 10vw);
-    font-size: 1.5rem;
+    gap: 1vmin;
+    flex-wrap: wrap;
 }
 
 svg {
@@ -55,25 +55,23 @@ svg {
     margin-bottom: 1rem;
 }
 
-.navbar {}
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
 
 .nav-link {
     font-size: calc(.875em + 0.625vw);
-    display: inline-block;
     margin-right: 5.25rem;
 }
 
 .nav-link:nth-of-type(3) {
-    margin-right: 0;
+    margin: 0;
 }
 
 @media screen and (max-width: 768px) {
-    nav {
-        display: block;
-    }
     .navbar {
-        display: flex;
         justify-content: space-between;
     }
-    .nav-link {}
 }
