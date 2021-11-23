@@ -39,7 +39,6 @@
     header {
         width: 100%;
         padding: 3vmin 0;
-        border-bottom: 1px solid black;
     }
     
     nav {
@@ -133,5 +132,43 @@
             font-size: 1.9rem;
             line-height: 1.6;
             font-weight: bold;
+        }
+    }
+    /********** FOOTER ***********/
+    
+    footer {
+        margin-top: 15rem;
+        padding: 10rem 0;
+        font-size: calc(1rem + 0.625vw);
+        text-align: center;
+        letter-spacing: .8px;
+        background-color: black;
+    }
+    
+    footer ul,
+    li {
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        flex-wrap: wrap;
+    }
+    
+    footer a {
+        color: white;
+        border-bottom: 1.5px solid white;
+        padding: 0.2rem;
+    }
+    
+    footer p {
+        margin-top: 10rem;
+        font-weight: lighter;
+        color: rgba(255, 255, 255, .4);
+    }
+    
+    @media screen and (max-width: 768px) {
+        footer ul,
+        li {
+            display: block;
+            margin-bottom: 4rem;
         }
     }
