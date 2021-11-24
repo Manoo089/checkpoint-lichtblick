@@ -34,6 +34,17 @@
     h6 {
         font-family: 'Lato', sans-serif;
     }
+    
+    .button {
+        display: inline-block;
+        margin-top: 2rem;
+        padding: 1rem 2rem;
+        border: 3px solid black;
+        border-radius: 10px;
+        font-size: calc(1.5rem + 0.625vw);
+        font-weight: bold;
+        letter-spacing: .75px;
+    }
     /********** HEADER *********************/
     
     header {
@@ -137,6 +148,22 @@
             line-height: 1.6;
             font-weight: bold;
         }
+    }
+    
+    article+article {
+        margin: 10rem 0;
+        padding: 10rem 1rem;
+        text-align: center;
+        font-size: calc(1.5rem + 0.625vw);
+        line-height: 1.5;
+    }
+    
+    main>article:nth-of-type(2) {
+        background-color: #E8A6B6;
+    }
+    
+    main>article:nth-of-type(3) {
+        background-color: #9EB8AE;
     }
     /********** FOOTER ***********/
     
